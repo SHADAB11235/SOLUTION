@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.netcamp.sol">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.DesignDemo">
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Signup" android:theme="@style/AppTheme.Dark"/>
+        <activity android:name=".Menu" />
+        <activity android:name=".Calculator" />
+        <activity
+            android:name=".Videoplayer"
+            android:configChanges="screenSize" />
+        <activity android:name=".Quiz" />
+        <activity android:name=".Quiz1" />
+        <activity android:name=".Quiz2" />
+        <activity android:name=".Quiz3" />
+        <activity android:name=".Quiz4" />
+        <activity android:name=".Accelerometer" />
+        <activity android:name=".Camera" />
+        <activity android:name=".Quiz5" />
+             <activity android:name=".Light"></activity>
+    </application>
+
+</manifest>
